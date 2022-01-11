@@ -1,0 +1,6 @@
+framework module WZTextInputView {
+  umbrella header "WZTextInputView-umbrella.h"
+
+  export *
+  module * { export * }
+}

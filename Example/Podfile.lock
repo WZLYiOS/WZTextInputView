@@ -1,0 +1,16 @@
+PODS:
+  - WZTextInputView (0.1.0)
+
+DEPENDENCIES:
+  - WZTextInputView (from `../`)
+
+EXTERNAL SOURCES:
+  WZTextInputView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WZTextInputView: afb10989595d4613a4e4bedf0b1b873e065eb539
+
+PODFILE CHECKSUM: 36f2b42decc9371005a3830e8169d2781c1b766a
+
+COCOAPODS: 1.11.2

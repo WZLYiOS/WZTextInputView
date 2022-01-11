@@ -1,0 +1,6 @@
+use_frameworks!
+target 'WZTextInputView_Tests' do
+  pod 'WZTextInputView', :path => '../'
+  
+  
+end
