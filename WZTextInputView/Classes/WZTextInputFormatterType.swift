@@ -21,6 +21,8 @@ public enum WZTextInputFormatterType: CustomStringConvertible {
     case alphabet
     case numberAndAlphabet
     case space
+    case decimals(limit: Int)  /// 保留几位小数
+    case removeEmoji
     case custom(regexString: String)
     
     /// 格式
@@ -42,6 +44,10 @@ public enum WZTextInputFormatterType: CustomStringConvertible {
             return "^[\\S]*$"
         case let .custom(regexString):
             return regexString
+        case let .decimals(limit):
+            return "(\\+|\\-)?(([0]|(0[.]\\d{0,\(limit)}))|([1-9]\\d{0,6}(([.]\\d{0,\(limit)})?)))?"
+        case .removeEmoji:
+            return "^[\\u4E00-\\u9FA5A-Za-z0-9*(^)$%~!?@#$…&%￥—+=、。，；‘’“”：·/-]+$"
         default:
             return nil
         }
@@ -66,6 +72,10 @@ public enum WZTextInputFormatterType: CustomStringConvertible {
             return "字母"
         case .space:
             return "空格"
+        case .decimals:
+            return "保留几位小数"
+        case .removeEmoji:
+            return "移除emoj表情"
         case .custom:
             return "自定义"
         }
