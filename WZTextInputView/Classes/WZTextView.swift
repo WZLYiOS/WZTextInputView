@@ -5,7 +5,7 @@
 //  PD <#产品文档地址#>
 //  Design <#设计文档地址#>
 //  Copyright © 2022 WZLY. All rights reserved.
-//  @author 邱啟祥(739140860@qq.com)   
+//  @author 邱啟祥(739140860@qq.com)
 //
 
 import UIKit
@@ -402,12 +402,26 @@ extension WZTextView: UITextViewDelegate {
                 return true
             }
             
+            if NSMaxRange(range) > textView.text.count {
+                // 如果 range 越界了，继续返回 YES 会造成 rash
+                // 这里的做法是本次返回 NO，并将越界的 range 缩减到没有越界的范围，再手动做该范围的替换。
+                let temRange = NSMakeRange(range.location, range.length - (NSMaxRange(range) - textView.text.count))
+                if temRange.length > 0 {
+                    if let textRang = textView.convertUITextRangeFromNSRange(temRange) {
+                        textView.replace(textRang, withText: text)
+                    }
+                }
+                return false
+            }
+            
+            
             let isDeleting = range.length > 0 && text.count <= 0
             if isDeleting {
+                // 允许删除，这段必须放在上面的逻辑后面
                 return true
             }
             
-            let rangeLength = textView.text.wz.substring(with: range).count
+            let rangeLength = range.length
             let textWillOutofMaximumTextLength = textView.text.count - rangeLength +
                 text.count > maximumTextLength
             if textWillOutofMaximumTextLength {
@@ -425,8 +439,12 @@ extension WZTextView: UITextViewDelegate {
                     let allowedText = (text as NSString).substring(with: characterSequencesRange)
                     if allowedText.count <= substringLength {
                         textView.text = (textView.text as NSString).replacingCharacters(in: range, with: allowedText)
-                        let location = range.location + Int(substringLength)
-                        textView.selectedRange = NSMakeRange(location, 0)
+                        // iOS 10 修改 selectedRange 可以让光标立即移动到新位置，但 iOS 11 及以上版本需要延迟一会才可以
+                        let finalSelectedRange = NSMakeRange(range.location + substringLength, 0)
+                        textView.selectedRange = finalSelectedRange
+                        DispatchQueue.main.async {
+                            textView.selectedRange = finalSelectedRange
+                        }
                         if !shouldResponseToProgrammaticallyTextChanges {
                             originalDelegate?.textViewDidChange!(textView)
                         }
@@ -490,3 +508,21 @@ extension WZTextView: UITextViewDelegate {
         originalDelegate?.scrollViewDidZoom?(scrollView)
     }
 }
+
+private extension UITextView {
+    
+    func convertUITextRangeFromNSRange(_ range: NSRange) -> UITextRange? {
+        if range.location == NSNotFound || NSMaxRange(range) > self.text.count {
+            return nil
+        }
+        
+        let beginning = beginningOfDocument
+        
+        guard let startPosition = position(from: beginning, offset: range.location),
+                let endPosition = position(from: beginning, offset: NSMaxRange(range)) else {
+            return nil
+        }
+        return textRange(from: startPosition, to: endPosition)
+    }
+}
+

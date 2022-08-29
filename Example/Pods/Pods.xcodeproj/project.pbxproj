@@ -16,7 +16,6 @@
 		704CBF48781CC65F30D69AC1DC9C75F3 /* Pods-WZTextInputView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E4C0E5063C9DB01E8727E0D8BDDCCFA /* Pods-WZTextInputView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E0700535227A92CAA98D3AA21817D76 /* WZTextInputFormatterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748DB13B708926C1B1062F82B2BBAA8 /* WZTextInputFormatterType.swift */; };
 		932F1A13F91E5AC05533566A4D5D6D52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BADB8253E1FD01F7F3CF296653E4F5B9 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CFBBB3BA951459264B6E8B76259E23 /* ReplaceMe.swift */; };
 		E576614BD3DF34D6B5F86EF09B618BD1 /* WZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39A522B38F68E2401CC4625FEA3D394 /* WZTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008EF5EDBBF5D0FDD8AD4B9338B62C03 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		008EF5EDBBF5D0FDD8AD4B9338B62C03 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0C00CB7349D679E282BEDE15DCEB56FC /* WZTextInputView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZTextInputView; path = WZTextInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ACE85B86556F1DBABFF97621F0D802F /* WZTextInputView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZTextInputView.modulemap; sourceTree = "<group>"; };
 		2834C49661BC8E8F8FB40FF3A5020105 /* Pods-WZTextInputView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZTextInputView_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -46,17 +45,16 @@
 		94991CD5D00563FB86B6498D7169FB11 /* WZTextHelp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextHelp.swift; path = WZTextInputView/Classes/WZTextHelp.swift; sourceTree = "<group>"; };
 		95275556C54FC4ADD49FCCFCC1E25E6C /* WZTextInputView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZTextInputView.release.xcconfig; sourceTree = "<group>"; };
 		98335F45E3ECA7594C8FF70D2802B7FC /* Pods-WZTextInputView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZTextInputView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA998A69D5819339773777AA4F4A3807 /* Pods-WZTextInputView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZTextInputView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B8CFBBB3BA951459264B6E8B76259E23 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = WZTextInputView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		BDA0FBEB72CA556F56667DA88852BFFA /* Pods-WZTextInputView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WZTextInputView_Tests"; path = Pods_WZTextInputView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1F875568B648A908500E80442C4D9C /* Pods-WZTextInputView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WZTextInputView_Tests.modulemap"; sourceTree = "<group>"; };
 		BFCC09514DE2B5DFB1468B0B9B64E92D /* WZTextInputView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZTextInputView-umbrella.h"; sourceTree = "<group>"; };
 		C748DB13B708926C1B1062F82B2BBAA8 /* WZTextInputFormatterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextInputFormatterType.swift; path = WZTextInputView/Classes/WZTextInputFormatterType.swift; sourceTree = "<group>"; };
-		CB019FE76E461805E2E9A9424AD760BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CB019FE76E461805E2E9A9424AD760BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CE54C2CB1A2564FF40A3FE8750949233 /* Pods-WZTextInputView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZTextInputView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D39A522B38F68E2401CC4625FEA3D394 /* WZTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextField.swift; path = WZTextInputView/Classes/WZTextField.swift; sourceTree = "<group>"; };
-		D8EDE8AA91C96358B646C19574EC40A0 /* WZTextInputView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WZTextInputView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8EDE8AA91C96358B646C19574EC40A0 /* WZTextInputView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WZTextInputView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DE7125D050E68A4A8B738647B3743C11 /* WZTextInputView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZTextInputView-dummy.m"; sourceTree = "<group>"; };
 		E78D830F55627EF9870D1AA39B1A9F07 /* Pods-WZTextInputView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZTextInputView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +82,6 @@
 		29EFEC6011DCD89D425E7C3E0E2F5C21 /* WZTextInputView */ = {
 			isa = PBXGroup;
 			children = (
-				B8CFBBB3BA951459264B6E8B76259E23 /* ReplaceMe.swift */,
 				D39A522B38F68E2401CC4625FEA3D394 /* WZTextField.swift */,
 				94991CD5D00563FB86B6498D7169FB11 /* WZTextHelp.swift */,
 				C748DB13B708926C1B1062F82B2BBAA8 /* WZTextInputFormatterType.swift */,
@@ -299,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BADB8253E1FD01F7F3CF296653E4F5B9 /* ReplaceMe.swift in Sources */,
 				E576614BD3DF34D6B5F86EF09B618BD1 /* WZTextField.swift in Sources */,
 				46BB9B2B906BD7FF66F62B505B333281 /* WZTextHelp.swift in Sources */,
 				7E0700535227A92CAA98D3AA21817D76 /* WZTextInputFormatterType.swift in Sources */,
@@ -416,8 +412,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

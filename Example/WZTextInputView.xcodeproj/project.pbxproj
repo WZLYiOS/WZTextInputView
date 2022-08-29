@@ -16,10 +16,10 @@
 		607FACE51AFB9204008FA782 /* WZTextInputView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZTextInputView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8883D0DDDF306ECCEA578AD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		940D1D04C0BD1C6070A61AC2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8883D0DDDF306ECCEA578AD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		940D1D04C0BD1C6070A61AC2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9DA13EF24442A21505841547 /* Pods-WZTextInputView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZTextInputView_Tests.release.xcconfig"; path = "Target Support Files/Pods-WZTextInputView_Tests/Pods-WZTextInputView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C817ED1A6965D2ED14B7C9F1 /* WZTextInputView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WZTextInputView.podspec; path = ../WZTextInputView.podspec; sourceTree = "<group>"; };
+		C817ED1A6965D2ED14B7C9F1 /* WZTextInputView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WZTextInputView.podspec; path = ../WZTextInputView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D4FAE5C10B4BA45305F99538 /* Pods_WZTextInputView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WZTextInputView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,6 @@
 				387117AA0BA2F4C04EB3279A /* Pods-WZTextInputView_Tests.debug.xcconfig */,
 				9DA13EF24442A21505841547 /* Pods-WZTextInputView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,12 +130,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 74MC74A426;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -147,6 +143,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -328,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 387117AA0BA2F4C04EB3279A /* Pods-WZTextInputView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 74MC74A426;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -350,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DA13EF24442A21505841547 /* Pods-WZTextInputView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 74MC74A426;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
