@@ -196,10 +196,26 @@ extension WZTextField: UITextFieldDelegate {
         }
         
         // 如果是中文输入法正在输入拼音的过程中（markedTextRange 不为 nil），是不应该限制字数的（例如输入“huang”这5个字符，其实只是为了输入“黄”这一个字符），所以在 shouldChange 这里不会限制，而是放在 didChange 那里限制。
+        if (textField.markedTextRange != nil) {
+            return true
+        }
+        
+        if NSMaxRange(range) > textField.text?.count ?? 0 {
+            // 如果 range 越界了，继续返回 YES 会造成 crash
+            // 这里的做法是本次返回 NO，并将越界的 range 缩减到没有越界的范围，再手动做该范围的替换。
+            let temRange = NSMakeRange(range.location, range.length - (NSMaxRange(range) - (textField.text?.count ?? 0)))
+            if temRange.length > 0 {
+                if let textRang = textField.convertUITextRangeFromNSRange(temRange) {
+                    textField.replace(textRang, withText: string)
+                }
+            }
+            return false
+        }
         
         
         let isDeleting = range.length > 0 && string.count <= 0
-        if isDeleting || (textField.markedTextRange != nil) {
+        if isDeleting {
+            // 允许删除，这段必须放在上面的逻辑后面
             return originalDelegate?.textField?(temTextField, shouldChangeCharactersIn: range, replacementString: string) ?? true
         }
 
@@ -215,6 +231,13 @@ extension WZTextField: UITextFieldDelegate {
                 let allowedText = (string as NSString).substring(with: characterSequencesRange)
                 if allowedText.count <= substringLength {
                     textField.text = (textField.text! as NSString).replacingCharacters(in: range, with: allowedText)
+                    // 通过代码 setText: 修改的文字，默认光标位置会在插入的文字开头，通常这不符合预期，因此这里将光标定位到插入的那段字符串的末尾
+                    // 注意由于粘贴后系统也会在下一个 runloop 去修改光标位置，所以我们这里也要 dispatch 到下一个 runloop 才能生效，否则会被系统的覆盖
+                    DispatchQueue.main.async {
+                        if let temRang = textField.convertUITextRangeFromNSRange(NSMakeRange(range.location + allowedText.count, 0)) {
+                            textField.selectedTextRange = temRang
+                        }
+                    }
                     textField.sendActions(for: UIControl.Event.editingChanged)
                     NotificationCenter.default.post(name: UITextField.textDidChangeNotification, object: textField)
                 }
@@ -315,3 +338,21 @@ extension WZTextField {
     }
 }
 
+
+private extension UITextField {
+    
+    func convertUITextRangeFromNSRange(_ range: NSRange) -> UITextRange? {
+        
+        if range.location == NSNotFound || NSMaxRange(range) > self.text?.count ?? 0 {
+            return nil
+        }
+        
+        let beginning = beginningOfDocument
+        
+        guard let startPosition = position(from: beginning, offset: range.location),
+                let endPosition = position(from: beginning, offset: NSMaxRange(range)) else {
+            return nil
+        }
+        return textRange(from: startPosition, to: endPosition)
+    }
+}

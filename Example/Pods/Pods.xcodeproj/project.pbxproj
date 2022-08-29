@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		07590724E5F313FCDC3ACAB2F53BA987 /* Pods-WZTextInputView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 453B73C57E93F0E08525F70F8ACDAB5F /* Pods-WZTextInputView_Tests-dummy.m */; };
-		2C9F853BAE7200F1BF2B837B62046DF3 /* WZTextInputView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCC09514DE2B5DFB1468B0B9B64E92D /* WZTextInputView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30B2ECCA834AB106612111A0CCDABBC3 /* WZTextInputView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7125D050E68A4A8B738647B3743C11 /* WZTextInputView-dummy.m */; };
-		31B79340883B1888C0A369A8FFA3C32D /* WZTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705D5168710945EDC04D5C569F17BF41 /* WZTextView.swift */; };
-		41D2D5505B44D95C0CA837624FB6CB32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		46BB9B2B906BD7FF66F62B505B333281 /* WZTextHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94991CD5D00563FB86B6498D7169FB11 /* WZTextHelp.swift */; };
+		12668B0C2F697DEB6FD0D482B4AAF8E1 /* WZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664FC6A3C4E998D598BF8E1885427DF9 /* WZTextField.swift */; };
+		25A36BBB6FBBBCC7E7FB35B8ADDD8108 /* WZTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02F87005AEEEE139E583D49B665F25 /* WZTextView.swift */; };
+		274AF88EBC78B59164B4A5B4A51E8B1D /* WZTextInputView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF81A4E52D07C05329F40E989BA30CBA /* WZTextInputView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		704CBF48781CC65F30D69AC1DC9C75F3 /* Pods-WZTextInputView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E4C0E5063C9DB01E8727E0D8BDDCCFA /* Pods-WZTextInputView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E0700535227A92CAA98D3AA21817D76 /* WZTextInputFormatterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748DB13B708926C1B1062F82B2BBAA8 /* WZTextInputFormatterType.swift */; };
 		932F1A13F91E5AC05533566A4D5D6D52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E576614BD3DF34D6B5F86EF09B618BD1 /* WZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39A522B38F68E2401CC4625FEA3D394 /* WZTextField.swift */; };
+		988E8CF33ED9AAD376CB085281A0DE6F /* WZTextHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0652578AD1D16B795E323640B7EF045 /* WZTextHelp.swift */; };
+		D7B51205F61575E06E466FB9F5ABCA4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E2FD8A08A46C7FAD77609AE10FC9D791 /* WZTextInputFormatterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83008758FD62F322A1AD51DBF93DFD /* WZTextInputFormatterType.swift */; };
+		F7A1B3C901C749AB4EE412882B554AE5 /* WZTextInputView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77E7242D785D111E22D7B2B1EFC046 /* WZTextInputView-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		76AB9C2413E5359FCAAA5912A7205C51 /* PBXContainerItemProxy */ = {
+		06C72F67E225B447941EBB7E3F145037 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -30,41 +30,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008EF5EDBBF5D0FDD8AD4B9338B62C03 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0C00CB7349D679E282BEDE15DCEB56FC /* WZTextInputView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZTextInputView; path = WZTextInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ACE85B86556F1DBABFF97621F0D802F /* WZTextInputView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZTextInputView.modulemap; sourceTree = "<group>"; };
 		2834C49661BC8E8F8FB40FF3A5020105 /* Pods-WZTextInputView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZTextInputView_Tests-Info.plist"; sourceTree = "<group>"; };
-		3A4E9DCB1AE56AA4A8E7E963F58551B6 /* WZTextInputView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZTextInputView-Info.plist"; sourceTree = "<group>"; };
+		2F83008758FD62F322A1AD51DBF93DFD /* WZTextInputFormatterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextInputFormatterType.swift; path = WZTextInputView/Classes/WZTextInputFormatterType.swift; sourceTree = "<group>"; };
+		39492DD146C13B34A723A562E0015265 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		3E4C0E5063C9DB01E8727E0D8BDDCCFA /* Pods-WZTextInputView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WZTextInputView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		453B73C57E93F0E08525F70F8ACDAB5F /* Pods-WZTextInputView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WZTextInputView_Tests-dummy.m"; sourceTree = "<group>"; };
-		677592D84B02269088C24E4699E7A198 /* WZTextInputView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZTextInputView.debug.xcconfig; sourceTree = "<group>"; };
-		705D5168710945EDC04D5C569F17BF41 /* WZTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextView.swift; path = WZTextInputView/Classes/WZTextView.swift; sourceTree = "<group>"; };
+		664FC6A3C4E998D598BF8E1885427DF9 /* WZTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextField.swift; path = WZTextInputView/Classes/WZTextField.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7D11CF216131E03E3617574772C6994F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7F5E779EB5ED7D9BFC9B42C5D2039537 /* Pods-WZTextInputView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WZTextInputView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		831FDE31C9F770D421622A3937E1E946 /* WZTextInputView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZTextInputView-prefix.pch"; sourceTree = "<group>"; };
-		94991CD5D00563FB86B6498D7169FB11 /* WZTextHelp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextHelp.swift; path = WZTextInputView/Classes/WZTextHelp.swift; sourceTree = "<group>"; };
-		95275556C54FC4ADD49FCCFCC1E25E6C /* WZTextInputView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZTextInputView.release.xcconfig; sourceTree = "<group>"; };
+		885E407CB18E7B22F264A40139B070CD /* WZTextInputView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZTextInputView.modulemap; sourceTree = "<group>"; };
+		93D28E86A79D502E768BC5D3FCB304C1 /* WZTextInputView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZTextInputView.release.xcconfig; sourceTree = "<group>"; };
 		98335F45E3ECA7594C8FF70D2802B7FC /* Pods-WZTextInputView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZTextInputView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4C0B0B8B790993298840A369D194269 /* WZTextInputView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZTextInputView-prefix.pch"; sourceTree = "<group>"; };
+		A4E1C4D42EB4ACA5D969646D1BB9AAC3 /* WZTextInputView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZTextInputView.debug.xcconfig; sourceTree = "<group>"; };
 		AA998A69D5819339773777AA4F4A3807 /* Pods-WZTextInputView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZTextInputView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BDA0FBEB72CA556F56667DA88852BFFA /* Pods-WZTextInputView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WZTextInputView_Tests"; path = Pods_WZTextInputView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1F875568B648A908500E80442C4D9C /* Pods-WZTextInputView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WZTextInputView_Tests.modulemap"; sourceTree = "<group>"; };
-		BFCC09514DE2B5DFB1468B0B9B64E92D /* WZTextInputView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZTextInputView-umbrella.h"; sourceTree = "<group>"; };
-		C748DB13B708926C1B1062F82B2BBAA8 /* WZTextInputFormatterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextInputFormatterType.swift; path = WZTextInputView/Classes/WZTextInputFormatterType.swift; sourceTree = "<group>"; };
-		CB019FE76E461805E2E9A9424AD760BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C0652578AD1D16B795E323640B7EF045 /* WZTextHelp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextHelp.swift; path = WZTextInputView/Classes/WZTextHelp.swift; sourceTree = "<group>"; };
+		C9C1049674A48E5CCC43EF4F12841D6E /* WZTextInputView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WZTextInputView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CE54C2CB1A2564FF40A3FE8750949233 /* Pods-WZTextInputView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZTextInputView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D39A522B38F68E2401CC4625FEA3D394 /* WZTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextField.swift; path = WZTextInputView/Classes/WZTextField.swift; sourceTree = "<group>"; };
-		D8EDE8AA91C96358B646C19574EC40A0 /* WZTextInputView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WZTextInputView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DE7125D050E68A4A8B738647B3743C11 /* WZTextInputView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZTextInputView-dummy.m"; sourceTree = "<group>"; };
+		CF81A4E52D07C05329F40E989BA30CBA /* WZTextInputView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZTextInputView-umbrella.h"; sourceTree = "<group>"; };
+		DC02F87005AEEEE139E583D49B665F25 /* WZTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZTextView.swift; path = WZTextInputView/Classes/WZTextView.swift; sourceTree = "<group>"; };
+		DD77E7242D785D111E22D7B2B1EFC046 /* WZTextInputView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZTextInputView-dummy.m"; sourceTree = "<group>"; };
 		E78D830F55627EF9870D1AA39B1A9F07 /* Pods-WZTextInputView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZTextInputView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4812A971D8107E62021DDD1110F0EDF /* WZTextInputView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZTextInputView-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1636F0DCBCCC2149274BA034B788A912 /* Frameworks */ = {
+		01F59145658BEA4CAD63642C2D005EE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D2D5505B44D95C0CA837624FB6CB32 /* Foundation.framework in Frameworks */,
+				D7B51205F61575E06E466FB9F5ABCA4D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,18 +79,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29EFEC6011DCD89D425E7C3E0E2F5C21 /* WZTextInputView */ = {
+		02C5D7C1F0F5C78BEB6AD336228CC353 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D39A522B38F68E2401CC4625FEA3D394 /* WZTextField.swift */,
-				94991CD5D00563FB86B6498D7169FB11 /* WZTextHelp.swift */,
-				C748DB13B708926C1B1062F82B2BBAA8 /* WZTextInputFormatterType.swift */,
-				705D5168710945EDC04D5C569F17BF41 /* WZTextView.swift */,
-				E944816807FF028FEB4E1C2CB4548FDD /* Pod */,
-				BEDC44068F4887D13696B4C1D78F2045 /* Support Files */,
+				885E407CB18E7B22F264A40139B070CD /* WZTextInputView.modulemap */,
+				DD77E7242D785D111E22D7B2B1EFC046 /* WZTextInputView-dummy.m */,
+				F4812A971D8107E62021DDD1110F0EDF /* WZTextInputView-Info.plist */,
+				A4C0B0B8B790993298840A369D194269 /* WZTextInputView-prefix.pch */,
+				CF81A4E52D07C05329F40E989BA30CBA /* WZTextInputView-umbrella.h */,
+				A4E1C4D42EB4ACA5D969646D1BB9AAC3 /* WZTextInputView.debug.xcconfig */,
+				93D28E86A79D502E768BC5D3FCB304C1 /* WZTextInputView.release.xcconfig */,
 			);
-			name = WZTextInputView;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WZTextInputView";
+			sourceTree = "<group>";
+		};
+		1D0B7DEBE84CD4800B47FF02B97CB891 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92648599B88A0581C1AF845C187E48C9 /* WZTextInputView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -110,6 +119,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		92648599B88A0581C1AF845C187E48C9 /* WZTextInputView */ = {
+			isa = PBXGroup;
+			children = (
+				664FC6A3C4E998D598BF8E1885427DF9 /* WZTextField.swift */,
+				C0652578AD1D16B795E323640B7EF045 /* WZTextHelp.swift */,
+				2F83008758FD62F322A1AD51DBF93DFD /* WZTextInputFormatterType.swift */,
+				DC02F87005AEEEE139E583D49B665F25 /* WZTextView.swift */,
+				AAF8ACE8344962EC49184E51C4AE942F /* Pod */,
+				02C5D7C1F0F5C78BEB6AD336228CC353 /* Support Files */,
+			);
+			name = WZTextInputView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		9B57051F6ACE7C8573B0E34364D2F6C0 /* Pods-WZTextInputView_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,27 +150,14 @@
 			path = "Target Support Files/Pods-WZTextInputView_Tests";
 			sourceTree = "<group>";
 		};
-		BCF33FCFEA21AED815079001FA9499CA /* Development Pods */ = {
+		AAF8ACE8344962EC49184E51C4AE942F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				29EFEC6011DCD89D425E7C3E0E2F5C21 /* WZTextInputView */,
+				7D11CF216131E03E3617574772C6994F /* LICENSE */,
+				39492DD146C13B34A723A562E0015265 /* README.md */,
+				C9C1049674A48E5CCC43EF4F12841D6E /* WZTextInputView.podspec */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BEDC44068F4887D13696B4C1D78F2045 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1ACE85B86556F1DBABFF97621F0D802F /* WZTextInputView.modulemap */,
-				DE7125D050E68A4A8B738647B3743C11 /* WZTextInputView-dummy.m */,
-				3A4E9DCB1AE56AA4A8E7E963F58551B6 /* WZTextInputView-Info.plist */,
-				831FDE31C9F770D421622A3937E1E946 /* WZTextInputView-prefix.pch */,
-				BFCC09514DE2B5DFB1468B0B9B64E92D /* WZTextInputView-umbrella.h */,
-				677592D84B02269088C24E4699E7A198 /* WZTextInputView.debug.xcconfig */,
-				95275556C54FC4ADD49FCCFCC1E25E6C /* WZTextInputView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WZTextInputView";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CDEA327898540F589A33C721DCFED473 /* Targets Support Files */ = {
@@ -162,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BCF33FCFEA21AED815079001FA9499CA /* Development Pods */,
+				1D0B7DEBE84CD4800B47FF02B97CB891 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				582CFCEA7D2E922AEA7355E7503E0071 /* Products */,
 				CDEA327898540F589A33C721DCFED473 /* Targets Support Files */,
@@ -177,24 +187,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E944816807FF028FEB4E1C2CB4548FDD /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				008EF5EDBBF5D0FDD8AD4B9338B62C03 /* LICENSE */,
-				CB019FE76E461805E2E9A9424AD760BA /* README.md */,
-				D8EDE8AA91C96358B646C19574EC40A0 /* WZTextInputView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		746F715BFAA75E40C9A3EE791FEFCFAC /* Headers */ = {
+		165200D2B550C1E97CA4A89050F4241C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9F853BAE7200F1BF2B837B62046DF3 /* WZTextInputView-umbrella.h in Headers */,
+				274AF88EBC78B59164B4A5B4A51E8B1D /* WZTextInputView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +221,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C29324A462403D2945C84D648BD4C993 /* PBXTargetDependency */,
+				D2B17AC195B68F62BD1B9C12403B2528 /* PBXTargetDependency */,
 			);
 			name = "Pods-WZTextInputView_Tests";
 			productName = Pods_WZTextInputView_Tests;
@@ -230,12 +230,12 @@
 		};
 		CA6ACCB9C43BEE1258CC5A87A55BA401 /* WZTextInputView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D0EBD2E37127E6D54322CDA1CCC4BDB /* Build configuration list for PBXNativeTarget "WZTextInputView" */;
+			buildConfigurationList = 436A6AF4BEF001694F0F8D099B28E99A /* Build configuration list for PBXNativeTarget "WZTextInputView" */;
 			buildPhases = (
-				746F715BFAA75E40C9A3EE791FEFCFAC /* Headers */,
-				16BC4DC3A6AE39C38A1865A195CBB8A3 /* Sources */,
-				1636F0DCBCCC2149274BA034B788A912 /* Frameworks */,
-				6E6E2D8E9F4D84807AC76EEC6F754B13 /* Resources */,
+				165200D2B550C1E97CA4A89050F4241C /* Headers */,
+				16030A5AB15082AD97E37904DA7CA2B4 /* Sources */,
+				01F59145658BEA4CAD63642C2D005EE5 /* Frameworks */,
+				1CE7878BCCC1E1430677EB10C7862301 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -252,8 +252,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -275,14 +275,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3DC4E94D831A96FBEFB69715BC12637A /* Resources */ = {
+		1CE7878BCCC1E1430677EB10C7862301 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E6E2D8E9F4D84807AC76EEC6F754B13 /* Resources */ = {
+		3DC4E94D831A96FBEFB69715BC12637A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,15 +292,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		16BC4DC3A6AE39C38A1865A195CBB8A3 /* Sources */ = {
+		16030A5AB15082AD97E37904DA7CA2B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E576614BD3DF34D6B5F86EF09B618BD1 /* WZTextField.swift in Sources */,
-				46BB9B2B906BD7FF66F62B505B333281 /* WZTextHelp.swift in Sources */,
-				7E0700535227A92CAA98D3AA21817D76 /* WZTextInputFormatterType.swift in Sources */,
-				30B2ECCA834AB106612111A0CCDABBC3 /* WZTextInputView-dummy.m in Sources */,
-				31B79340883B1888C0A369A8FFA3C32D /* WZTextView.swift in Sources */,
+				12668B0C2F697DEB6FD0D482B4AAF8E1 /* WZTextField.swift in Sources */,
+				988E8CF33ED9AAD376CB085281A0DE6F /* WZTextHelp.swift in Sources */,
+				E2FD8A08A46C7FAD77609AE10FC9D791 /* WZTextInputFormatterType.swift in Sources */,
+				F7A1B3C901C749AB4EE412882B554AE5 /* WZTextInputView-dummy.m in Sources */,
+				25A36BBB6FBBBCC7E7FB35B8ADDD8108 /* WZTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,11 +315,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C29324A462403D2945C84D648BD4C993 /* PBXTargetDependency */ = {
+		D2B17AC195B68F62BD1B9C12403B2528 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WZTextInputView;
 			target = CA6ACCB9C43BEE1258CC5A87A55BA401 /* WZTextInputView */;
-			targetProxy = 76AB9C2413E5359FCAAA5912A7205C51 /* PBXContainerItemProxy */;
+			targetProxy = 06C72F67E225B447941EBB7E3F145037 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,7 +412,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -516,9 +517,9 @@
 			};
 			name = Debug;
 		};
-		D0AEC8F9ABDD028302869AE846669C37 /* Debug */ = {
+		C9EC3DFF843911DDFDECBD90EB544F58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 677592D84B02269088C24E4699E7A198 /* WZTextInputView.debug.xcconfig */;
+			baseConfigurationReference = A4E1C4D42EB4ACA5D969646D1BB9AAC3 /* WZTextInputView.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -546,9 +547,9 @@
 			};
 			name = Debug;
 		};
-		F8D9C1744A67CE9F8B17BB5A09408775 /* Release */ = {
+		F7C72B24092936E52D615F1A41F7CF93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95275556C54FC4ADD49FCCFCC1E25E6C /* WZTextInputView.release.xcconfig */;
+			baseConfigurationReference = 93D28E86A79D502E768BC5D3FCB304C1 /* WZTextInputView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -580,20 +581,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D0EBD2E37127E6D54322CDA1CCC4BDB /* Build configuration list for PBXNativeTarget "WZTextInputView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0AEC8F9ABDD028302869AE846669C37 /* Debug */,
-				F8D9C1744A67CE9F8B17BB5A09408775 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3122096CEDBC0813509F50BDF152997F /* Build configuration list for PBXNativeTarget "Pods-WZTextInputView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CD056106C16DF2F74C6C70A731DEE6C /* Debug */,
 				04A22E5935F101E6104C480FD701AA11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		436A6AF4BEF001694F0F8D099B28E99A /* Build configuration list for PBXNativeTarget "WZTextInputView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9EC3DFF843911DDFDECBD90EB544F58 /* Debug */,
+				F7C72B24092936E52D615F1A41F7CF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
