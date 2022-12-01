@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://code.aliyun.com/wzlyios/WZTextInputView'
+  s.homepage         = 'https://github.com/WZLYiOS/WZTextInputView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'qiuqiqixang' => '739140860@qq.com' }
-  s.source           = { :git => 'https://code.aliyun.com/wzlyios/WZTextInputView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/WZLYiOS/WZTextInputView.git', :tag => s.version.to_s }
 
   s.swift_version         = '5.0'
   s.ios.deployment_target = '9.0'
