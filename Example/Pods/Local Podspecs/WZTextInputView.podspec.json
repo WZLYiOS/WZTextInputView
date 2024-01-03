@@ -1,9 +1,9 @@
 {
   "name": "WZTextInputView",
-  "version": "0.3.0",
+  "version": "1.0.1",
   "summary": "A short description of WZTextInputView.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://code.aliyun.com/wzlyios/WZTextInputView",
+  "homepage": "https://github.com/WZLYiOS/WZTextInputView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "qiuqiqixang": "739140860@qq.com"
   },
   "source": {
-    "git": "https://code.aliyun.com/wzlyios/WZTextInputView.git",
-    "tag": "0.3.0"
+    "git": "https://github.com/WZLYiOS/WZTextInputView.git",
+    "tag": "1.0.1"
   },
   "swift_versions": "5.0",
   "platforms": {

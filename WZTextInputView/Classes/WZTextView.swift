@@ -101,6 +101,7 @@ open class WZTextView: UITextView {
     /// 初始化
     convenience init() {
         self.init(frame: CGRect.zero, textContainer: nil)
+        textAlignment = UIView.appearance().semanticContentAttribute == .forceRightToLeft ? .right:.left
     }
     
     public override init(frame: CGRect, textContainer: NSTextContainer?) {

@@ -98,6 +98,7 @@ open class WZTextField: UITextField {
     
     convenience init() {
         self.init(frame: CGRect.zero)
+        textAlignment = UIView.appearance().semanticContentAttribute == .forceRightToLeft ? .right:.left
     }
     
     public override init(frame: CGRect) {

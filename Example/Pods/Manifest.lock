@@ -1,5 +1,5 @@
 PODS:
-  - WZTextInputView (0.3.0)
+  - WZTextInputView (1.0.1)
 
 DEPENDENCIES:
   - WZTextInputView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WZTextInputView: 265d73194c20696efcdd557bc03a46b6e94a3a90
+  WZTextInputView: f08acff460ce6e2c5b46a27259ec42ae1c1b6591
 
 PODFILE CHECKSUM: 36f2b42decc9371005a3830e8169d2781c1b766a
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
