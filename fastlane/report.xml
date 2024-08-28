@@ -5,34 +5,57 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000321">
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000341">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: version_get_podspec" time="0.000566">
+      <testcase classname="fastlane.lanes" name="01: version_get_podspec" time="0.000416">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: pod_lib_lint" time="13.198776">
+      <testcase classname="fastlane.lanes" name="02: pod_lib_lint" time="18.819627">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: version_bump_podspec" time="0.000833">
+      <testcase classname="fastlane.lanes" name="03: version_bump_podspec" time="0.001435">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: git_add" time="0.024795">
+      <testcase classname="fastlane.lanes" name="04: git_add" time="0.029017">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: git_commit" time="0.032442">
+      <testcase classname="fastlane.lanes" name="05: git_commit" time="0.059069">
         
-          <failure message="/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:55:in `block (2 levels) in parsing_binding'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/commands_generator.rb:110:in `block (2 levels) in run'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/commander-4.6.0/lib/commander/command.rb:187:in `call'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/commander-4.6.0/lib/commander/command.rb:157:in `run'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/commander-4.6.0/lib/commander/runner.rb:444:in `run_active_command'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:124:in `run!'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/commander-4.6.0/lib/commander/delegates.rb:18:in `run!'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/commands_generator.rb:354:in `run'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/commands_generator.rb:43:in `start'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/fastlane/lib/fastlane/cli_tools_distributor.rb:123:in `take_off'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/gems/fastlane-2.212.1/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/bin/fastlane:23:in `load'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/bin/fastlane:23:in `&lt;main&gt;'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/bin/ruby_executable_hooks:24:in `eval'&#10;/Users/qiuqixiang/.rvm/gems/ruby-2.7.0/bin/ruby_executable_hooks:24:in `&lt;main&gt;'&#10;&#10;Exit status of command 'git commit -m WZTextInputView\ \发\布\ 1.0.2\ \版\本 WZTextInputView.podspec' was 1 instead of 0.&#10;On branch master&#10;Your branch is up to date with 'origin/master'.&#10;&#10;Changes not staged for commit:&#10;  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)&#10;  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)&#10;	modified:   fastlane/report.xml&#10;&#10;no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)&#10;" />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: push_to_git_remote" time="3.920188">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: git_tag_exists" time="0.027125">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: add_git_tag" time="0.037669">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: push_git_tags" time="4.036682">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: pod_push" time="28.053779">
         
       </testcase>
     
