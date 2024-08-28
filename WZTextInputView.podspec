@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WZTextInputView'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A short description of WZTextInputView.  asd'
 
   s.description      = <<-DESC

@@ -39,6 +39,12 @@ open class WZTextField: UITextField {
         }
     }
     
+    public var placeholderFont: UIFont? {
+        didSet {
+            updateAttributedPlaceholderIfNeeded()
+        }
+    }
+    
     /// 显示允许输入的最大文字长度，默认为 UInt.max，也即不限制长度
     public var maximumTextLength: UInt = UInt.max
     
@@ -286,8 +292,13 @@ extension WZTextField {
             return
         }
         
+        var att: [NSAttributedString.Key : Any] = [NSAttributedString.Key.foregroundColor : placeholderColor]
+        if let font = placeholderFont {
+            att[NSAttributedString.Key.font] = font
+        }
+        
         attributedPlaceholder = NSAttributedString(string: temPlaceholder,
-                                                   attributes: [NSAttributedString.Key.foregroundColor : placeholderColor])
+                                                   attributes: att)
     }
     
     
